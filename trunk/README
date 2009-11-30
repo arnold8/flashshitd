@@ -108,14 +108,14 @@ Any client has 10 (-t option) seconds to write the policy request '<policy-file-
 Note: Do not use -d/--debug option!!!
 With this feature, flashShitD exits if it receive a "quit" message:
 
-  # ./flashShitD -f /tmp/a.php -P /tmp/flashShit.pid -u baku -g staff -F -d &>/dev/null &
+  # ./flashShitD -f /tmp/policy.xml -P /tmp/flashShit.pid -u baku -g staff -F -d &>/dev/null &
   [1] 54056
 
   # ps aux | grep 54056
-  baku     54056   0.0  0.0  2436876   1948 s001  S     2:13pm   0:00.01 ./flashShitD -f /tmp/a.php -P /tmp/flashShit.pid -u baku -g staff -F -d
+  baku     54056   0.0  0.0  2436876   1948 s001  S     2:13pm   0:00.01 ./flashShitD -f /tmp/policy.xml -P /tmp/flashShit.pid -u baku -g staff -F -d
 
   # echo quit | nc localhost 843
-  [1]+  Done        ./flashShitD -f /tmp/a.php -P /tmp/flashShit.pid -u baku -g staff -F -d >&/dev/null
+  [1]+  Done        ./flashShitD -f /tmp/policy.xml -P /tmp/flashShit.pid -u baku -g staff -F -d >&/dev/null
 
 +-
 | Author
